@@ -1,0 +1,332 @@
+{
+  "documentId": {
+    "valueId": "83512179",
+    "schemeId": "AF Kundnummer"
+  },
+  "timestamp": 0,
+  "person": {
+    "legalId": {
+      "valueId": "1957-02-11-4652",
+      "schemeId": "Personnummer",
+      "description": "Svenskt personnummer"
+    },
+    "name": {
+      "given": "Maximilian",
+      "family": "Forsman",
+      "formattedName": "Maximilian Forsman"
+    },
+    "communication": {
+      "address": [
+        {
+          "useCode": "hemadress",
+          "line1": "Yxered årena",
+          "postalCode": "31235",
+          "city": "Laholm",
+          "countryCode": "SE"
+        }
+      ],
+      "phone": [
+        {
+          "useCode": "hem",
+          "preference": 1,
+          "formattedNumber": "081234567"
+        },
+        {
+          "useCode": "mobil",
+          "preference": 2,
+          "formattedNumber": "07044313232"
+        },
+        {
+          "useCode": "övrigt",
+          "preference": 3,
+          "formattedNumber": "010654321"
+        }
+      ],
+      "email": [
+        {
+          "preference": 1,
+          "address": "maximilian.forrsman@mysite.se"
+        }
+      ],
+      "web": [
+        {
+          "url": "http://www.mycv.se/maximilian"
+        }
+      ]
+    }
+  },
+  "profiles": [
+    {
+      "languageCode": "sv-SE", 
+      "executiveSummary": "Entrepreneurial leader with 12+ years of experience in helping organisations attract and engage talent. \n\nRIGHT NOW: \nScouting Tech Talent for NewCo, a ParentCO Digital Growth Venture. We are digitalizing manufacturing and we’re hiring. We are located in the heart of Stockholm. To find out more, check out my experience.\n\nMY STRENGTHS & POTENTIAL \n# Energetic & transparent leadership\n# Creative business & concept development\n# Human-first marketing & communications\n\nI'm at my best game when I leverage my ability to combine creative, entrepreneurial and management consulting approach and mindset. I bring energy, direction and leadership to both short and long-term assignments, and I'm ready to explore, inspire and challenge wherever I'm invited. \n\nUltimately I want to build great ideas, products, business and team. Passion, energy and transparency is the core. \n\nOthers recommend me as a strong speaker, moderator and workshop leader.\n\nREPUTATION\n\"With his brilliance, courage and a relentless entrepreneurial mindset Maximilian inspires and sees opportunities that others do not see\" - Summary of reputation analysis by the team at 'A Reputation Company'. Read more on www.maximilian.com/english.\n\nTRACK RECORD \n12+ years as a consultant, manager, business developer and creator focused on HR, communications and employer branding. Diverse experience from both corporate, start-up and agency environment and brands like Telia, Universum, Sime, Epicenter, Comprend, Hallvarsson & Halvarsson & others.\n",
+      "profileName": "My profile", 
+      "employerPreferences": {
+        "industryCodes": [
+          {
+            "valueId": "1250 - Försäljnings- och marknadschefer",
+            "schemeId": "SSYK"
+          },
+          {
+            "valueId": "1210 - Ekonomi- och finanschefer",
+            "schemeId": "SSYK"
+          }
+        ]
+      },
+      "description": "Portability",
+      "positionPreferences": {
+        "locations": [
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "SE",
+                "schemeId": "kommun"
+              }
+            }
+          },
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "DE",
+                "schemeId": "kommun"
+              }
+            }
+          },
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "ES",
+                "schemeId": "kommun"
+              }
+            }
+          },
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "FR",
+                "schemeId": "kommun"
+              }
+            }
+          },
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "GB",
+                "schemeId": "kommun"
+              }
+            }
+          },
+          {
+            "referenceLocation": {
+              "countrySubDivision": {
+                "valueId": "01", 
+                "schemeId": "kommun"
+              }
+            }
+          }
+        ],
+        "jobCategories": [
+          {
+            "name": "20 - Chefer och verksamhetsledare",
+            "code": "AF Taxonomy Field"
+          }
+        ],
+        "positionTitles": [
+          "Marknadschef",
+          "Budgetchef"
+        ]
+      },
+      "employment": [
+        {
+          "description": "As leader of the digital talent communication offering I served as spokesperson, project manager, advisor and specialist in employer branding, recruitment/talent acquisition, internal and HR communication.\n\nProjects included among others top management business case creation, talent market research and analysis, workshops, career website concept creations, HR communication concepts and more.",
+          "title": "Head of Talent & Communication",
+          "organization": {
+            "name": "SpaceX"
+          },
+          "employmentPeriod": {
+            "currentIndicator": false,
+            "start": "2009-03",
+            "end": "2017-12"
+          }
+        },
+        {
+          "description": "As project manager for the concept and business development phase, I worked with several founding partners of invested media companies to create a new innovation house in Stockholm, launched in 2015 and fully focused on digital business and innovation. Award-winning since launch and now expanding.",
+          "title": "Project Manager",
+          "organization": {
+            "name": "Bonnier"
+          },
+          "employmentPeriod": {
+            "currentIndicator": false,
+            "start": "2002-09",
+            "end": "2009-02"
+          }
+        },
+        {
+          "description": "- Building a house of digital expertise to transform the manufacturing industry.\n- Solving real problems with real users and real customers. In massive scale. \n- Starting with a clean slate. No legacy.\n- New modern organisation built from scratch through radical transparency. \n- Growth venture with autonomy backed by substantial resources and domain know-how.\n- Making things better through a people-first, human-centered approach.",
+          "title": "Talent Scout & Employer Branding advisor",
+          "organization": {
+            "name": "Sandvik"
+          },
+          "employmentPeriod": {
+            "currentIndicator": true,
+            "start": "2016-12"
+          }
+        }
+      ],
+      "education": [
+        {
+          "institution": {
+            "name": "Hyper Island"
+          },
+          "attendancePeriods": [
+            {
+              "currentIndicator": false,
+              "start": "2012-12",
+              "end": "2013-12"
+            }
+          ],
+          "programs": [
+            "213"
+          ],
+          "currentlyAttendingIndicator": false,
+          "description": "12 weeks diploma program with learning areas including; Understand the digital landscape, Be familiar with diverse digital channels, Strategically plan for transformative technologies such as data, mobile and cloud, Discuss the impact digital has on business, Identify markets and consumer behaviours in the digital world, Argue the relevance of digital tools when developing brands, Harness the transformative potential of digital to add value, Plan for how to strategically work with innovation."
+        },
+        {
+          "institution": {
+            "name": "Stockholm University"
+          },
+          "attendancePeriods": [
+            {
+              "currentIndicator": false,
+              "start": "1999-12",
+              "end": "2002-12"
+            }
+          ],
+          "programs": [
+            "34"
+          ],
+          "currentlyAttendingIndicator": false,
+          "description": "Topped off my Bachelor studies at Jönköping International Business School and Copenhagen Business School with a Master thesis at Stockholm University, while starting work with Telia Sweden and later Universum. \n\nOur master thesis combined marketing and management with the title \"The Merge Between HR and Branding - Investigating Employer Branding as an Interdisciplinary Management Concept and the Challenge of Measuring it\"."
+        }
+      ],
+      "qualifications": [ 
+        {
+          "competencyId": [
+            {
+              "valueId": "609031",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Content marketing"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "609033",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Community management"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "4648",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Produktutveckling"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "608872",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Certifikat, brandtätningsteknik"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "602508",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Omvärldsanalys (Business Intelligence)"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "608389",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Coaching"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "602804",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Produktdesign"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "838",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Brandteknik"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "601172",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Ekonomisk rapportering"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "609032",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Digital marknadsföring/Onlinemarknadsföring"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "606418",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Datakommunikation"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "608275",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Detaljplanering"
+        },
+        {
+          "competencyId": [
+            {
+              "valueId": "1410",
+              "schemeId": "AF Taxonomy Skill"
+            }
+          ],
+          "competencyName": "Ekonomiadministration"
+        }
+      ]
+    }
+  ]
+}
