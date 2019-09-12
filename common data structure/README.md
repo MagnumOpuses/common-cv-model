@@ -6,12 +6,15 @@
 # Common Data Structure
 
 This folder contains information about the common data structure that Arbetsformedlingen will be providing and using. 
-At the moment the structure is shown though an example, and it will be changed and generalised a bit more soon. 
-We however already accept sugestions regarging the structure from potential users.
+It is the common structure provided by the HROpen standard (https://hropenstandards.org/). 
+There is a plan for adding (or finding and repurposing existing sections of the structure) that will be describing Gig jobs as well as the different sources that the user can import profiles from and if they allow read and write access.
+It is understood that this structrure is quite extensive and rich and includes a lot of sections that might seem irrelevant at the moment. They have been kept both because the organisation feels that it should provide a solution that can cover all the HR needs of the market, or reuse some of them to cover needs in the future. 
+
+This is but the first version of this common structure and we are looking forward to input from users and collaborators, through pull requests.
 
 ## Versions, current dev state and future
 
-No versions yet.
+1.0
 
 ## Getting started
 
