@@ -3,13 +3,18 @@
 [logo]: https://github.com/MagnumOpuses/project-meta/blob/master/img/jobtechdev_black.png "JobTech dev logo"
 [A JobTech Project](https://www.jobtechdev.se)
 
-# Gravity Specs
+# Common Data Structure
 
-Gravity Specs is the public space where all Gravity specifications are published. This repository should contain all details required for your service to become compliant with the Gravity infrastructure.
+This folder contains information about the common data structure that Arbetsformedlingen will be providing and using. 
+It is the common structure provided by the HROpen standard (https://hropenstandards.org/). 
+There is a plan for adding (or finding and repurposing existing sections of the structure) that will be describing Gig jobs as well as the different sources that the user can import profiles from and if they allow read and write access.
+It is understood that this structrure is quite extensive and rich and includes a lot of sections that might seem irrelevant at the moment. They have been kept both because the organisation feels that it should provide a solution that can cover all the HR needs of the market, or reuse some of them to cover needs in the future. 
+
+This is but the first version of this common structure and we are looking forward to input from users and collaborators, through pull requests.
 
 ## Versions, current dev state and future
 
-No versions yet.
+1.0
 
 ## Getting started
 
@@ -21,10 +26,7 @@ No prerequisites guidelines yet.
 
 ### Installation
 
-```bash
-git clone https://github.com/MagnumOpuses/gravity-specs.git
-cd gravity-specs
-```
+No installation guidlines yet.
 
 ## Test
 
