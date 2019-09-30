@@ -72,13 +72,8 @@
                     "description": "this is the data tranfered.",
                     "type": "structure",
                     "allOf": [
-                                    { "$ref": "add link to data file from other folders" },
-                                    { "$ref": "add link to data file from other folders" },
-                                    { "$ref": "add link to data file from other folders" },
-                                    { "$ref": "add link to data file from other folders" },
-                                    { "$ref": "add link to data file from other folders" },
-                                    { "$ref": "add link to data file from other folders" }
-                                ]                
+                                    { "$ref": "../recruiting/json/CandidateType.json#" }
+                             ]                
                 }
             }
         },
