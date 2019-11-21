@@ -2,13 +2,8 @@
     "$schema": "https://github.com/MagnumOpuses/common-cv-model",
     "version": "0.1.0",
     "title": "DataEnvelope",
-    "description": "Metadata for the data transfered through the AF-Connect service.",
+    "description": "Metadata for the data transferred through the AF-Connect service.",
     "definitions": {
-        "EnvelopeType": {
-            "title": "EnvelopeType",
-            "description": "A collection of data describing the source of the data.",
-            "type": "object"
-        },
         "SourceType": {
             "title": "SourceType",
             "description": "Contains structured information about a candidate, including information about their past experiences (Work History, Education History, etc). This information can be used for evaluation or submission of candidacy for a position opening or resource requirement.",
@@ -42,26 +37,26 @@
                     "type": "boolean"
                 },
                 "consentRevokedTimestamp": {
-                    "description": "If the concent was revoked this shows the timestamp of the revokation. If the consent has been revoked multiple times this shows the latest one.",
+                    "description": "If the concent was revoked this shows the timestamp of the revocation. If the consent has been revoked multiple times this shows the latest one.",
                     "type": "timestamp"
                 },
                 "consentedTimePeriod": {
-                    "description": "The time period the user has given consent for their data to be accesicle. If this amount of time has traverced from the time the concent was changed to yes then it is automatically changed to no and the action is recorded in the rest of this data structure as well.",
+                    "description": "The time period the user has given consent for their data to be accessible. If this amount of time has traversed from the time the concent was changed to yes then it is automatically changed to no and the action is recorded in the rest of this data structure as well.",
                     "type": "time"
                 }
             }
         },
         "DataType": {
             "title": "DataType",
-            "description": "Details about the data stransefered. TODO add the name of the structure/document type, ",
+            "description": "Details about the data transferred. TODO add the name of the structure/document type, ",
             "type": "object",
             "properties": {
                 "size": {
-                    "description": "the size of the pachage being transfered in MB.",
+                    "description": "the size of the package being transferred in MB.",
                     "type": "int"
                 },
                 "documentType": {
-                    "description": "Since this is envisioned to be a data agnistic envelope it is better to show here what kind of data is being tranfered. In this case this will most likely be DV data but can also be certificates or insurance infromation.",
+                    "description": "Since this is envisioned to be a data agnostic envelope it is better to show here what kind of data is being transferred. In this case this will most likely be DV data but can also be certificates or insurance information.",
                     "type": "int"
                 },
                 "dataStructureLink": {
@@ -69,13 +64,30 @@
                     "type": "int"
                 },
                 "data": {
-                    "description": "this is the data tranfered.",
+                    "description": "this is the data transferred.",
                     "type": "structure",
                     "allOf": [
-                                    { "$ref": "../recruiting/json/CandidateType.json#" }
-                             ]                
+                        { "$ref": "../common data structure/recruiting/json/CandidateType.json#" }                             
+                    ]                
                 }
             }
         },
     "type": "object"
+},
+
+"properties": {
+    "source": {
+      "description": "Contains structured information about a candidate, including information about their past experiences (Work History, Education History, etc). This information can be used for evaluation or submission of candidacy for a position opening or resource requirement.",
+      "$ref": "#/definitions/SourceType"
+    },
+    "consent": {
+      "description": "The time and date the consent was given. If the consent has been changed multiple times this shows the latest one.",
+      "$ref": "#/definitions/ConsentType"
+    },
+    "data": {
+      "description": "Details about the data transferred. TODO add the name of the structure/document type, ",
+      "$ref": "#/definitions/DataType"
+    }
+  },
+  "required": ["source", "consent", "data"]
 }
