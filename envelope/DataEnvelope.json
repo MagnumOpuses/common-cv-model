@@ -67,8 +67,8 @@
                     "description": "this is the data transferred.",
                     "type": "structure",
                     "allOf": [
-                                    { "$ref": "../recruiting/json/CandidateType.json#" }
-                             ]                
+                        { "$ref": "../common data structure/recruiting/json/CandidateType.json#" }                             
+                    ]                
                 }
             }
         },
