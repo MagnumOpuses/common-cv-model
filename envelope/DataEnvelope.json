@@ -21,7 +21,8 @@
                     "description": "Indicator showing if the source allows write back.",
                     "type": "boolean"
                 }
-            }
+            },
+            "required": ["sourceId", "sourceName"]
         },
         "ConsentType": {
             "title": "ConsentType",
@@ -44,7 +45,8 @@
                     "description": "The time period the user has given consent for their data to be accessible. If this amount of time has traversed from the time the concent was changed to yes then it is automatically changed to no and the action is recorded in the rest of this data structure as well.",
                     "type": "time"
                 }
-            }
+            },
+            "required": ["consentTimestamp", "consentStatus"]
         },
         "DataType": {
             "title": "DataType",
@@ -70,7 +72,8 @@
                         { "$ref": "../common data structure/recruiting/json/CandidateType.json#" }                             
                     ]                
                 }
-            }
+            },
+            "required": ["documentType", "data"]
         },
     "type": "object"
 },
