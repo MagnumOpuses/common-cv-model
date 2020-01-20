@@ -27,11 +27,14 @@ No prerequisites guidelines yet.
 
 ### Installation
 
-No installation guidlines yet.
+```
+cd validator
+npm install
+```
 
 ## Test
 
-```bash
+```
 cd validator
 npm test
 ```
