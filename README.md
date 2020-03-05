@@ -21,7 +21,7 @@ This is but the first version of this common structure and we are looking forwar
 
 ## Versions, current dev state and future
 
-0.1.2
+1.0.0
 
 ## Getting started
 
