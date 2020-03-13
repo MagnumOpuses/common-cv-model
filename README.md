@@ -4,8 +4,6 @@
 
 [A JobTech Project](https://www.jobtechdev.se)
 
-# __NOTICE__ While it is the intention of the implementation to follow this standard, some changes need to be made to make that true. As soon as these changes are implemented this notice will be removed.
-
 # Common Data Structure
 
 This repository contains information about the common data structure that [AF-Connect](https://github.com/MagnumOpuses/af-connect) will be providing as a response.
