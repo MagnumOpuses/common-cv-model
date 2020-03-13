@@ -8,6 +8,8 @@
 
 This repository contains information about the common data structure that [AF-Connect](https://github.com/MagnumOpuses/af-connect) will be providing as a response.
 It is the common structure provided by the HROpen standard (https://hropenstandards.org/).
+This structure will keep being used by the Gravity team for any projects exporting data from Arbetsformedlingen, to increase data cohesion and understanding in the labour market. For this reason, while the adoption of this standard is optional but would be appreciated, a relatively good knowledge and understanding of it is expected. 
+
 
 There is a plan for adding (or finding and repurposing existing sections of the structure) that will be describing the Gig market.
 
