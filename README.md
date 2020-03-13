@@ -8,6 +8,7 @@
 
 This repository contains information about the common data structure that [AF-Connect](https://github.com/MagnumOpuses/af-connect) will be providing as a response.
 It is the common structure provided by the HROpen standard (https://hropenstandards.org/).
+This structure will keep being used by the Gravity team for any projects exporting data from Arbetsformedlingen, to increase data cohesion and understanding in the labour market. For this reason, while the adoption of this standard is optional but would be appreciated, a relatively good knowledge and understanding of it is expected. 
 
 There is a plan for adding (or finding and repurposing existing sections of the structure) that will be describing the Gig market.
 
@@ -15,7 +16,7 @@ It is understood that this structure is quite extensive and rich and includes a 
 
 Examples for each part of the structure can be found along side the definitions in their designated folder.
 
-This project also adds an [envelope](https://github.com/MagnumOpuses/common-cv-model/tree/master/envelope) to the structure that is used to wrape and transfer the data for the purposes of [AF-Connect](https://github.com/MagnumOpuses/af-connect). In the same folder as the definition an axample of the full response from [AF-Connect project](https://github.com/MagnumOpuses/af-connect) can be [found](https://github.com/MagnumOpuses/common-cv-model/blob/master/envelope/example_WithHROpen421.json). This example can be validated with the code found in the "validator" folder. Instructions for that can be found in the installation adn testing sections of this README. 
+This project also adds an [envelope](https://github.com/MagnumOpuses/common-cv-model/tree/master/envelope) to the structure that is used to wrape and transfer the data for the purposes of [AF-Connect](https://github.com/MagnumOpuses/af-connect). In the same folder as the definition an example of the full response from [AF-Connect project](https://github.com/MagnumOpuses/af-connect) can be [found](https://github.com/MagnumOpuses/common-cv-model/blob/master/envelope/example_WithHROpen421.json). This example can be validated with the code found in the "validator" folder. Instructions for that can be found in the installation adn testing sections of this README. 
 
 This is but the first version of this common structure and we are looking forward to input from users and collaborators, through pull requests.
 
