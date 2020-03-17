@@ -51,7 +51,7 @@ npm test
 
 ## Deployment
 
-No deployment is needed.
+No deployment needed.
 
 ## Built with
 
