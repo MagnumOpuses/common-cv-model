@@ -27,14 +27,6 @@ This is only the first version of this common structure and we are looking forwa
 
 1.0.0
 
-## Getting started
-
-No getting started guidelines yet.
-
-### Prerequisites
-
-No prerequisites guidelines yet.
-
 ### Installation
 
 This section describes the steps for installing the validator that accompanies the project and can be used to test the response from [AF-Connect](https://github.com/MagnumOpuses/af-connect) with the structure described in this repository.  
@@ -54,14 +46,6 @@ Originally, the validator tests against the example provided in the envelop fold
 cd validator
 npm test
 ```
-
-## Deployment
-
-No deployment needed.
-
-## Built with
-
-No build needed.
 
 ## Contributing
 
