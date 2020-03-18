@@ -37,12 +37,18 @@ No prerequisites guidelines yet.
 
 ### Installation
 
+This section describes the steps for installing the validator that accompanies the project and can be used to test the response from [AF-Connect](https://github.com/MagnumOpuses/af-connect) with the structure described in this repository.  
+
 ```
 cd validator
 npm install
 ```
 
 ## Test
+
+This section describes the steps for testing the response from [AF-Connect](https://github.com/MagnumOpuses/af-connect) with the structure described in this project. 
+
+Originally, the validator tests against the example provided in the envelop folder.
 
 ```
 cd validator
