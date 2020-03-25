@@ -18,8 +18,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated the version of HROpen to 4.2-1.
 - Updated example to correspond with new version of HROpen.
 - Updated the README.md to add more information.
-- 
-
-### Deprecated
-- HROpen 4.1.1 version changed to 4.2-1.
-
