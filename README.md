@@ -9,7 +9,7 @@
 
 This repository contains information about the common data structure that [AF-Connect](https://github.com/MagnumOpuses/af-connect) will be providing as a response.
 
-The structure follows the HROpen standard (https://hropenstandards.org/) completely at the moment. If the standard does not satisfy the needs of the project it will be adapted accordingly. Please get in contact with any comments, changes or additions, we are very eager to make this work for the whole of the swedish labour market.
+The structure follows the [HROpen standard](https://hropenstandards.org/) completely at the moment. If the standard does not satisfy the needs of the project it will be adapted accordingly. Please get in contact with any comments, changes or additions, we are very eager to make this work for the whole of the swedish labour market.
 
 This structure will keep being used by the Gravity team for any projects exporting data from Arbetsformedlingen, to increase data cohesion and understanding in the labour market. For this reason, while the adoption of this standard is optional but would be appreciated, a relatively good knowledge and understanding of it is expected. 
 
