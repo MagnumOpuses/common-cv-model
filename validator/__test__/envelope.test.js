@@ -1,10 +1,10 @@
 const { validate } = require("../validator");
 
-test("example1.json", done => {
+test("example_WithHROpen421.json", (done) => {
   return validate(
-    "../envelope/example1.json",
+    "../envelope/example_WithHROpen421.json",
     "../envelope/DataEnvelope.json"
-  ).then(result => {
+  ).then((result) => {
     expect(result.errors.length).toBe(0);
     done();
   });
