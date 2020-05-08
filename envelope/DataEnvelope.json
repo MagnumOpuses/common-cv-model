@@ -4,9 +4,13 @@
     "title": "DataEnvelope",
     "description": "Metadata for the data transferred through the AF-Connect service.",
     "definitions": {
+        "sessionToken": {
+            "description": "The session token assigned to this session.",
+            "type": "string"
+        },
         "SourceType": {
             "title": "SourceType",
-            "description": "Contains structured information about a candidate, including information about their past experiences (Work History, Education History, etc). This information can be used for evaluation or submission of candidacy for a position opening or resource requirement.",
+            "description": "Contains information about the source of the data.",
             "allOf": [],
             "type": "object",
             "properties": {
@@ -17,12 +21,46 @@
                     "description": "The name of the source.",
                     "type": "string"
                 },
-                "allowsWrite": {
-                    "description": "Indicator showing if the source allows write back.",
-                    "type": "boolean"
+                "termsAndConditions": {
+                    "description": "List of the term and conditions as specified by the source of the data. The user needs to consent to these for the data to be allowed through.",
+                    "type": "object",
+                    "allOf": [],
+                    "properties":{
+                        "property": {
+                            "description": "Each of the terms and conditions that the user needs to approve.",
+                            "type": "string"
+                        }
+                    }
                 }
             },
-            "required": ["sourceId", "sourceName"]
+            "required": ["sourceId", "sourceName", "termsAndConditions"]
+        },
+        "SinkType": {
+            "title": "SinkType",
+            "description": "Contains information about the sink of teh data.",
+            "allOf": [],
+            "type": "object",
+            "properties": {
+                "sinkId": {
+                    "description": "The primary identifier of the sink of the data."
+                },
+                "sinkName": {
+                    "description": "The name of the sink.",
+                    "type": "string"
+                },
+                "purposeOfUse": {
+                    "description": "List of the purposes the sink will use the data for. The user needs to consent to these for the data to be allowed through.",
+                    "type": "object",
+                    "allOf": [],
+                    "properties":{
+                        "property": {
+                            "description": "Each of the purposes that the user needs to approve.",
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "required": ["sinkId", "sinkName", "purposeOfUse"]
         },
         "ConsentType": {
             "title": "ConsentType",
@@ -44,9 +82,31 @@
                 "consentedTimePeriod": {
                     "description": "The time period the user has given consent for their data to be accessible. If this amount of time has traversed from the time the concent was changed to yes then it is automatically changed to no and the action is recorded in the rest of this data structure as well.",
                     "type": "time"
+                },
+                "AcceptedTerms": {
+                    "description": "List of the terms and conditions the user has consented to.",
+                    "type": "object",
+                    "allOf": [],
+                    "properties":{
+                        "property": {
+                            "description": "each of the consents.",
+                            "type": "string"
+                        }
+                    }
+                },
+                "AcceptedPurposes": {
+                    "description": "List of the purposes the user has consented to.",
+                    "type": "object",
+                    "allOf": [],
+                    "properties":{
+                        "property": {
+                            "description": "each of the consents.",
+                            "type": "string"
+                        }
+                    }
                 }
             },
-            "required": ["consentTimestamp", "consentStatus"]
+            "required": ["consentTimestamp", "consentStatus", "AcceptedTerms", "AcceptedPurposes"]
         },
         "DataType": {
             "title": "DataType",
@@ -66,7 +126,7 @@
                     "type": "int"
                 },
                 "data": {
-                    "description": "this is the data transferred.",
+                    "description": "The data transferred.",
                     "type": "structure",
                     "allOf": [
                         { "$ref": "../common data structure/recruiting/json/CandidateType.json#" }                             
@@ -79,18 +139,26 @@
 },
 
 "properties": {
+    "sessionToken": {
+        "description": "The session token assigned to this session.",
+        "$ref": "#/definitions/SourceType"
+      },
     "source": {
-      "description": "Contains structured information about a candidate, including information about their past experiences (Work History, Education History, etc). This information can be used for evaluation or submission of candidacy for a position opening or resource requirement.",
+      "description": "Contains information about the source of the data.",
       "$ref": "#/definitions/SourceType"
     },
+    "sink": {
+        "description": "Contains information about the sink of teh data.",
+        "$ref": "#/definitions/SourceType"
+      },
     "consent": {
-      "description": "The time and date the consent was given. If the consent has been changed multiple times this shows the latest one.",
+      "description": "The time and date the consent was given. If the consent has been changed multiple times this shows the latest one. This structure also contains the accepted terms and conditions as well as the purpose of use of the data that the user allows to be shared between teh source and sink.",
       "$ref": "#/definitions/ConsentType"
     },
     "data": {
-      "description": "Details about the data transferred. TODO add the name of the structure/document type, ",
+      "description": "Details about the data transferred.",
       "$ref": "#/definitions/DataType"
     }
   },
-  "required": ["source", "consent", "data"]
+  "required": ["sessionToken", "source", "sink", "consent", "data"]
 }
