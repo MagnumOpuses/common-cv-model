@@ -1,19 +1,27 @@
-{  
-  "source":{  
-     "sourceId":"01",
-     "sourceName":"Arbetsformedlingen",
-     "allowsWrite":true
+{
+  "sessionToken": "test-23039409-session-r2094rufn-token",
+  "source": {
+    "sourceId": "01",
+    "sourceName": "Arbetsformedlingen",
+    "termsAndConditions": ["term1", "term2"]
   },
-  "consent":{  
-     "consentTimestamp":"2019-09-20T11:53:21+00:00",
-     "consentStatus":true,
-     "consentedTimePeriod":"0000-00-30T00:00:00+00:00"
+  "sink": {
+    "sinkId": "01",
+    "sinkName": "TestSink",
+    "purposeOfUse": ["purposeOfUse1", "purposeOfUse2", "purposeOfUse3"]
   },
-  "data":{  
-     "size":"500",
-     "documentType":"CV",
-     "dataStructureLink":"https://github.com/MagnumOpuses/common-cv-model/tree/master/common%20data%20structure",
-     "data":{
+  "consent": {
+    "consentTimestamp": "2019-09-20T11:53:21+00:00",
+    "consentStatus": true,
+    "consentedTimePeriod": "0000-00-30T00:00:00+00:00",
+    "AcceptedTerms": ["term1"],
+    "AcceptedPurposes": ["purposeOfUse2", "purposeOfUse3"]
+  },
+  "data": {
+    "size": "500",
+    "documentType": "CV",
+    "dataStructureLink": "https://github.com/MagnumOpuses/common-cv-model/tree/master/common%20data%20structure",
+    "data": {
       "documentId": {
         "value": "81994764",
         "schemeId": null,
@@ -2032,7 +2040,9 @@
                   "current": false,
                   "attachmentReferences": null,
                   "descriptions": {
-                    "item": ["Jag har utvecklat ett HR system och Demo verktyg."]
+                    "item": [
+                      "Jag har utvecklat ett HR system och Demo verktyg."
+                    ]
                   },
                   "organization": {
                     "taxId": null,
@@ -4037,6 +4047,5 @@
         ]
       }
     }
-    
   }
 }
